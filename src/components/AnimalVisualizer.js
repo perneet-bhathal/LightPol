@@ -8,6 +8,7 @@ import animal2 from './images/animal2.webp';
 import animal3 from './images/animal3.png';
 import animal4 from './images/animal4.png';
 import animal5 from './images/animal5.png';
+import animal6 from './images/animal6.png';
 
 const animalImages = [
   animal1,
@@ -15,6 +16,7 @@ const animalImages = [
   animal3,
   animal4,
   animal5,
+  animal6
 ];
 
 const descriptions = [
@@ -22,7 +24,8 @@ const descriptions = [
     "Turtle",
     "Owl",
     "Birds",
-    "Turtle"
+    "Turtle",
+    "Bat"
 ];
 
 const AnimalVisualizer = ({ onBack }) => {
