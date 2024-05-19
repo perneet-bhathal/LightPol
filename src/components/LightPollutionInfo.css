@@ -23,7 +23,13 @@ body {
   margin-bottom: 20px;
 }
 
-.back-button {
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-button,
+.animal-visualizer-button {
   padding: 10px 20px;
   font-size: 16px;
   color: white;
@@ -35,12 +41,14 @@ body {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.back-button:hover {
+.back-button:hover,
+.animal-visualizer-button:hover {
   background: linear-gradient(90deg, rgba(0,191,255,1) 0%, rgba(70,130,180,1) 50%, rgba(100,149,237,1) 100%);
   transform: translateY(-5px);
 }
 
-.back-button:focus {
+.back-button:focus,
+.animal-visualizer-button:focus {
   outline: none;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
 }

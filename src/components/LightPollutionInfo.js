@@ -1,9 +1,7 @@
-// LightPollutionInformation.js
-
 import React from 'react';
 import './LightPollutionInfo.css';
 
-const LightPollutionInfo = ({ onBack }) => {
+const LightPollutionInfo = ({ onBack, onAnimalVisualizer }) => {
   return (
     <div className="information-container">
       <div className="information-text">
@@ -23,7 +21,10 @@ const LightPollutionInfo = ({ onBack }) => {
           Efforts to mitigate light pollution in San Diego and beyond are crucial for safeguarding the region's biodiversity and ecological integrity. Implementing responsible outdoor lighting practices, such as shielding light fixtures, using energy-efficient bulbs, and employing motion sensors, can help reduce unnecessary light spillage and glare. Furthermore, raising awareness among the public about the importance of preserving natural darkness and its benefits for wildlife and human health is essential for fostering a culture of conservation and sustainable development. By taking concerted action to combat light pollution, San Diego and other urban areas can preserve the beauty of the night sky and protect the delicate balance of ecosystems for generations to come.
         </p>
       </div>
-      <button className="back-button" onClick={onBack}>Back to Visualizer</button>
+      <div className="button-container">
+        <button className="back-button" onClick={onBack}>Back to Visualizer</button>
+        <button className="animal-visualizer-button" onClick={onAnimalVisualizer}>Go to Animal Visualizer</button>
+      </div>
     </div>
   );
 };
