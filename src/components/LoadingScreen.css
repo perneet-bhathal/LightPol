@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap'); /* Import bubble font */
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  font-family: 'Bubblegum Sans', cursive;
+}
+
+.loading-logo {
+  width: 100px; /* Adjust size to make the image smaller */
+  margin-bottom: 20px;
+}
+
+.loading-bar {
+  width: 40%; /* Make the loading bar smaller */
+  height: 20px; /* Adjust height as needed */
+  border: 2px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.loading-progress {
+  height: 100%;
+  background-color: #ffd700; /* Yellow color */
+  transition: width 0.1s ease-in-out;
+}
+
+.loading-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
