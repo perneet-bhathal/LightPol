@@ -47,6 +47,8 @@ const AnimalVisualizer = ({ onBack }) => {
     };
   }, [currentImageIndex]);
 
+
+
   return (
     <div className="image-container">
       <img
@@ -56,7 +58,11 @@ const AnimalVisualizer = ({ onBack }) => {
       <div className="description">
         {descriptions[currentImageIndex]}
       </div>
-      <button className="back-button" onClick={onBack}>Back to Information</button>
+      {currentImageIndex === animalImages.length - 1 && (
+        <div className="buttons-container">
+          <button className="back-button" onClick={onBack}>Back to Information</button>
+        </div>
+      )}
     </div>
   );
 };
